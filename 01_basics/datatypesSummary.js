@@ -32,12 +32,40 @@ const myFunction = function(){
     console.log("Hello World");
 }
 
-console.log(typeof bigNumber) //bigint
-console.log(typeof null); //object
-console.log(typeof myFunction); //function or object function
-console.log(typeof anotherId); //symbol
+// console.log(typeof bigNumber) //bigint
+// console.log(typeof null); //object
+// console.log(typeof myFunction); //function or object function
+// console.log(typeof anotherId); //symbol
 
 /*
 document link:
 https://tc39.es/ecma262/#sec-typeof-operator
 */
+
+/* **************************************************************************************************** */
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myYoutubeName = "dipankar-paul"
+let anotherName = myYoutubeName
+// console.log(anotherName);
+anotherName = "Chai Aur Code"
+
+// console.log(myYoutubeName);  //dipankar-paul
+// console.log(anotherName);  //Chai Aur Code
+
+// In stack, copies of values are stored, so original value will not be changed.
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "dipankar@google.com"
+
+// console.log(userOne.email);  //dipankar@google.com
+// console.log(userTwo.email);  //dipankar@google.com
+
+// In heap, reference is shared, so original value will also be changed
