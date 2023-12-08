@@ -19,7 +19,7 @@ const jsUser = {
 console.log(jsUser.email);  //dipankar@google.com
 console.log(jsUser["email"]);  //dipankar@google.com
 console.log(jsUser["full name"]);  //dipankar paul
-console.log(jsUser.full name);  //gives error
+// console.log(jsUser.full name);  //gives error
 console.log(jsUser[mySym]);
 
 jsUser.email = "dipankar@gmail.com"
