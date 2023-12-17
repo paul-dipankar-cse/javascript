@@ -64,3 +64,30 @@ console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty("isLoggedIn"));  //true
 console.log(tinderUser.hasOwnProperty("isLogged"));  //false
+
+const course = {
+    coursename : 'javascript',
+    price : '999'
+}
+
+// console.log(course.coursename)
+
+const {coursename: name} = course
+// console.log(coursename); //javascript
+console.log(name);  //javascript
+
+
+//JSON = JavaScript Object Notation
+
+// {
+//     "name":"dipankar",
+//     "course":"btech"
+// }
+
+
+[
+    {},
+    {},
+    {}
+]
+// APIs are in JSON format
